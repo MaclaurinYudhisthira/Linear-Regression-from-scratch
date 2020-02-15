@@ -44,8 +44,8 @@ class LinearRegression:
         # creating Y matrix (1xn)
         Y=np.array(y)
         
-        # crating W matrix (2x1)
-        self.W=np.random.random(2)
+        # crating W matrix (nx1)
+        self.W=np.random.random(X.shape[1])
         
         return self.gardient_descent(X,Y,iterations,learning_rate,n_sample)
 
